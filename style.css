@@ -1,47 +1,3 @@
-@media screen and (min-width: 1280px) {
-  .m-menu {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .m-menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .lp-nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .lp-nav .nav-img {
-    height: 100%;
-    width: 10%;
-  }
-  .lp-nav ul {
-    display: none;
-  }
-  .lp-nav .m-menu {
-    border: 0px solid;
-    background-color: white;
-  }
-  .titre {
-    text-align: center;
-  }
-  .titre h1 {
-    font-size: 36;
-    margin-bottom: 0;
-  }
-  .titre .sous-titre {
-    font-size: 0.7em;
-  }
-  .right-panel {
-    display: none;
-  }
-}
-
 html body {
   margin: 0px;
   height: 100%;
@@ -78,9 +34,6 @@ html body .container .left-panel .lp-nav .nav-img {
 }
 
 html body .container .left-panel .lp-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -115,26 +68,24 @@ html body .container .left-panel .lp-nav ul li a:hover {
   color: #1907f0;
 }
 
-html body .container .left-panel .titre {
-  margin: 10%;
-  margin-top: 40%;
-}
-
 html body .container .left-panel .titre h1 {
   font-size: 40;
+  margin-bottom: 0;
+}
+
+html body .container .left-panel .titre .sous-titre {
+  font-size: 0.8em;
+  margin-top: 0;
+  color: #575252;
 }
 
 html body .container .left-panel form {
-  -webkit-box-shadow: 0px 0px 20px -10px black;
-          box-shadow: 0px 0px 20px -10px black;
-  background-color: white;
   width: 80%;
   border-radius: 50px;
   margin-left: 10%;
 }
 
 html body .container .left-panel form .inscription {
-  width: 110%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,30 +99,33 @@ html body .container .left-panel form .inscription {
   z-index: 0;
 }
 
+html body .container .left-panel form .inscription .i-img {
+  width: 10%;
+  padding: 0px;
+  margin-left: 5%;
+  color: grey;
+}
+
 html body .container .left-panel form .inscription input {
   border: 0px solid;
-  width: 60%;
+  width: 75%;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 html body .container .left-panel form .inscription .i-button {
-  margin: 1%;
   padding: 2%;
   border: 0px solid;
   background-color: #50e3c2;
   border-radius: 100px;
   color: white;
-  width: 35%;
-}
-
-html body .container .left-panel form .inscription .i-img {
-  padding: 4%;
-  color: grey;
 }
 
 html body .container .left-panel .grey-text {
   color: lightgrey;
   text-align: center;
   font-style: italic;
+  margin-top: 10%;
 }
 
 html body .container .right-panel {
@@ -188,4 +142,150 @@ html body .container .right-panel .bg-img {
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+
+@media screen and (min-width: 1280px) {
+  html body .container .left-panel .m-menu {
+    display: none;
+  }
+  html body .container .left-panel .lp-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body .container .left-panel .titre {
+    margin: 40% 10% 10% 10%;
+  }
+  html body .container .left-panel form {
+    -webkit-box-shadow: 0px 0px 20px -10px black;
+            box-shadow: 0px 0px 20px -10px black;
+    background-color: white;
+  }
+  html body .container .left-panel form .inscription {
+    width: 110%;
+  }
+  html body .container .left-panel form .inscription .i-button {
+    margin: 1%;
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html body .container .left-panel .m-menu {
+    display: none;
+  }
+  html body .container .left-panel .lp-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body .container .left-panel .titre {
+    margin: 40% 10% 10% 10%;
+  }
+  html body .container .left-panel form {
+    -webkit-box-shadow: 0px 0px 20px -10px black;
+            box-shadow: 0px 0px 20px -10px black;
+    background-color: white;
+  }
+  html body .container .left-panel form .inscription {
+    width: 110%;
+  }
+  html body .container .left-panel form .inscription .i-button {
+    margin: 1%;
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .m-menu {
+    display: none;
+  }
+  .titre {
+    margin: 30% 10% 10% 10%;
+  }
+  form {
+    -webkit-box-shadow: 0px 0px 20px -10px black;
+            box-shadow: 0px 0px 20px -10px black;
+    background-color: white;
+  }
+  form .inscription {
+    width: 110%;
+  }
+  form .inscription .i-button {
+    margin: 1%;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left-panel {
+    background-image: url("Group.svg");
+    background-repeat: no-repeat;
+  }
+  .left-panel .lp-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .left-panel .lp-nav .nav-img {
+    height: 40%;
+    width: 10%;
+  }
+  .left-panel .lp-nav ul {
+    display: none;
+  }
+  .left-panel .lp-nav .m-menu {
+    border: 0px solid;
+    background-color: transparent;
+  }
+  .left-panel .titre {
+    text-align: center;
+    margin: 30% 10% 10% 10%;
+  }
+  .left-panel .titre h1 {
+    font-size: 36;
+    margin-bottom: 0;
+  }
+  .left-panel .titre .sous-titre {
+    font-size: 0.7em;
+  }
+  .left-panel form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+    margin-bottom: 20%;
+  }
+  .left-panel form .inscription {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .left-panel form .inscription .m-box {
+    -webkit-box-shadow: 0px 0px 20px -10px black;
+            box-shadow: 0px 0px 20px -10px black;
+    background-color: white;
+    border-radius: 100px;
+  }
+  .left-panel form .inscription .m-box input {
+    width: 80%;
+  }
+  .left-panel form .inscription .i-button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15%;
+    margin-left: 20%;
+    height: 40px;
+    width: 60%;
+  }
+  .right-panel {
+    display: none;
+  }
 }
